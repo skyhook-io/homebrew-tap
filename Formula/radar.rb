@@ -15,6 +15,7 @@ class Radar < Formula
 
       def install
         bin.install "kubectl-radar"
+        bin.install_symlink "kubectl-radar" => "radar"
       end
     end
     if Hardware::CPU.arm?
@@ -23,6 +24,7 @@ class Radar < Formula
 
       def install
         bin.install "kubectl-radar"
+        bin.install_symlink "kubectl-radar" => "radar"
       end
     end
   end
@@ -33,6 +35,7 @@ class Radar < Formula
       sha256 "2fa5ccb57c0e89a7b1ad95cf13432db8ed0b33b71568663bf46dfcd5b22359d5"
       def install
         bin.install "kubectl-radar"
+        bin.install_symlink "kubectl-radar" => "radar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -40,6 +43,7 @@ class Radar < Formula
       sha256 "a8a8800a72c28c0424debe90de8638b5afee49a59182647041e699e5b9cca9e2"
       def install
         bin.install "kubectl-radar"
+        bin.install_symlink "kubectl-radar" => "radar"
       end
     end
   end
