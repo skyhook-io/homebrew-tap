@@ -10,8 +10,8 @@ class Radar < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_0.6.10_darwin_amd64.tar.gz"
-      sha256 "1d9391b935da3232c1282404639829d549c15f3f87e2956a6b84a5f41c4c3d2c"
+      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_v0.6.10_darwin_amd64.tar.gz"
+      sha256 "223696f1272f975415ea42ac54de920c12318ad6acdac7152c59fe1dabb139f3"
 
       def install
         bin.install "kubectl-radar"
@@ -19,8 +19,8 @@ class Radar < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_0.6.10_darwin_arm64.tar.gz"
-      sha256 "2d678db1017794cb614b83ac3332f0c6acc86e113a79ee7e8150d37d10a7f49c"
+      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_v0.6.10_darwin_arm64.tar.gz"
+      sha256 "cef714c8df67d27ab91ad84740c70ff291d5ea2835551aff347867983daeb6f0"
 
       def install
         bin.install "kubectl-radar"
@@ -31,16 +31,16 @@ class Radar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_0.6.10_linux_amd64.tar.gz"
-      sha256 "70fc3f46b8ebdd63aeb6083a0e1547ae8cb0ec47dc08872edb248025d1e0858b"
+      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_v0.6.10_linux_amd64.tar.gz"
+      sha256 "a8d9dbba2cc7bda2b51d0a4ede8e03219cfa1f52c59d1ec2bee7d663bdb08095"
       def install
         bin.install "kubectl-radar"
         bin.install_symlink "kubectl-radar" => "radar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_0.6.10_linux_arm64.tar.gz"
-      sha256 "937dded2c47931ed7652d6d2c9b6fac498f893d3ef5227ddcfe2473c64e39ec9"
+      url "https://github.com/skyhook-io/radar/releases/download/v0.6.10/radar_v0.6.10_linux_arm64.tar.gz"
+      sha256 "734e8d44e617fbb85818086d6e0f445e369e117711b619cb1e7d201c766ac4f7"
       def install
         bin.install "kubectl-radar"
         bin.install_symlink "kubectl-radar" => "radar"
