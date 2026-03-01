@@ -5,13 +5,13 @@
 class Radar < Formula
   desc "Modern Kubernetes visibility — topology, traffic, and Helm management"
   homepage "https://github.com/skyhook-io/radar"
-  version "1.0.5"
+  version "1.0.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skyhook-io/radar/releases/download/v1.0.5/radar_v1.0.5_darwin_amd64.tar.gz"
-      sha256 "b25fa74039903714b9ff32744b76089df8ba3a1c858e34aa8bf8c6d7bfa93f54"
+      url "https://github.com/skyhook-io/radar/releases/download/v1.0.6/radar_v1.0.6_darwin_amd64.tar.gz"
+      sha256 "f754fe9ea49b39d9214be847b53057bd46e217b041f0b94da03211f9f1ac923f"
 
       define_method(:install) do
         bin.install "kubectl-radar"
@@ -19,8 +19,8 @@ class Radar < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skyhook-io/radar/releases/download/v1.0.5/radar_v1.0.5_darwin_arm64.tar.gz"
-      sha256 "b5513b29d8512bfd1fcc3d6044ecacb98346450baa3420ce8ac1e7038c915cf3"
+      url "https://github.com/skyhook-io/radar/releases/download/v1.0.6/radar_v1.0.6_darwin_arm64.tar.gz"
+      sha256 "6e5c4d128e50bfa71498f4845e92bf808ff77598754329ce3c1631d7a13379cc"
 
       define_method(:install) do
         bin.install "kubectl-radar"
@@ -31,16 +31,16 @@ class Radar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skyhook-io/radar/releases/download/v1.0.5/radar_v1.0.5_linux_amd64.tar.gz"
-      sha256 "abf24cec5f439af2d43837ccf18430168afd35329d441621b7179741e1510d03"
+      url "https://github.com/skyhook-io/radar/releases/download/v1.0.6/radar_v1.0.6_linux_amd64.tar.gz"
+      sha256 "4f2b5ae0fc5bb2dc959f39215f957ff14d025990180549e0f9381c226315fadf"
       define_method(:install) do
         bin.install "kubectl-radar"
         bin.install_symlink "kubectl-radar" => "radar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skyhook-io/radar/releases/download/v1.0.5/radar_v1.0.5_linux_arm64.tar.gz"
-      sha256 "df887a111969329464638280a03525906455f21ad883dbbd6644cbd257685312"
+      url "https://github.com/skyhook-io/radar/releases/download/v1.0.6/radar_v1.0.6_linux_arm64.tar.gz"
+      sha256 "9f3d4c52f5b3ab5e4b72667637e496f10893c3eeffad7449301e1d538d179794"
       define_method(:install) do
         bin.install "kubectl-radar"
         bin.install_symlink "kubectl-radar" => "radar"
