@@ -1,6 +1,6 @@
 cask "radar-desktop" do
-  version "1.2.3"
-  sha256 "4c23d1852715f101f3700d7d5f38011adf2894e8a02c23efc1bf64bde1ddad0f"
+  version "1.2.4"
+  sha256 "f839587fc33d7dd356184809cc2c9405bceb0510aac499e531faef877ef3f2f7"
 
   url "https://github.com/skyhook-io/radar/releases/download/v#{version}/radar-desktop_v#{version}_darwin_universal.zip"
   name "Radar"
@@ -10,8 +10,7 @@ cask "radar-desktop" do
   app "Radar.app"
 
   caveats <<~EOS
-    Radar Desktop is not yet code-signed. On first launch:
+    Radar Desktop is not yet notarized with Apple. On first launch:
       Right-click Radar.app → Open → click "Open"
-    Or install with: brew install --cask --no-quarantine radar-desktop
   EOS
 end
