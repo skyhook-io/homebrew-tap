@@ -5,20 +5,20 @@
 class Skyhook < Formula
   desc "CLI for Skyhook."
   homepage "https://www.skyhook.io"
-  version "2.4.2"
+  version "2.4.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.2/skyhook_v2.4.2_darwin_amd64.tar.gz"
-      sha256 "9235262bf08cdb54bf156963eb72974aaeacda4a02d7efb615b27dd8ffeff3f1"
+      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.3/skyhook_v2.4.3_darwin_amd64.tar.gz"
+      sha256 "97ec244953daeced4369682d129972ef8f843134aac28c5dd889b49612c605b0"
 
       define_method(:install) do
         bin.install "skyhook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.2/skyhook_v2.4.2_darwin_arm64.tar.gz"
-      sha256 "1488a4220a503bb75e00d6ce96b1ef6c33a3c1547949c847d550387920e40b12"
+      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.3/skyhook_v2.4.3_darwin_arm64.tar.gz"
+      sha256 "16bfbf5005053a1068b22243594dc04bcd9f7598b18fb6ff7f1db5100bd0689a"
 
       define_method(:install) do
         bin.install "skyhook"
@@ -28,15 +28,15 @@ class Skyhook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.2/skyhook_v2.4.2_linux_amd64.tar.gz"
-      sha256 "1f3be0863c1e2183881d02e99c1d64817641226001cb5fa361f61f19a4000a49"
+      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.3/skyhook_v2.4.3_linux_amd64.tar.gz"
+      sha256 "9d199f91e7f9e8ba2de6890b127457923edbb80824dfa5f92a6fc13bdf1fbf77"
       define_method(:install) do
         bin.install "skyhook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.2/skyhook_v2.4.2_linux_arm64.tar.gz"
-      sha256 "b1ecd3c57e8fce3c05ff4efa229c882db9ebb6f6626b22f761ad5f20f020dc18"
+      url "https://github.com/skyhook-io/skyhook-cli/releases/download/2.4.3/skyhook_v2.4.3_linux_arm64.tar.gz"
+      sha256 "492cb9f28dc2d4d741e648555b7b7d053f58ed7a03afca0be9a0d4d2924e0b28"
       define_method(:install) do
         bin.install "skyhook"
       end
