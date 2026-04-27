@@ -11,7 +11,7 @@ class Radar < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/skyhook-io/radar/releases/download/v1.5.6/radar_v1.5.6_darwin_amd64.tar.gz"
-      sha256 "f636f2f5c5467b5d60966eca5f76bc7ab9ffa095595d256c217c28a9d38a63c9"
+      sha256 "97517ee5ae8403aaf6e93a68e1fb9c3669fe4484e79eec3794c278ce84b420e3"
 
       define_method(:install) do
         bin.install "kubectl-radar"
@@ -20,7 +20,7 @@ class Radar < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/skyhook-io/radar/releases/download/v1.5.6/radar_v1.5.6_darwin_arm64.tar.gz"
-      sha256 "5bf306d9aef805cb69b5a196369360d282eb53f2421d55893f5c2f5ae8378516"
+      sha256 "24a65b47059641c053bcee0cb9936e97838519e50567162abf70ce6ba2f4f5c0"
 
       define_method(:install) do
         bin.install "kubectl-radar"
@@ -32,7 +32,7 @@ class Radar < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/skyhook-io/radar/releases/download/v1.5.6/radar_v1.5.6_linux_amd64.tar.gz"
-      sha256 "7d6509ff8847ff01d9a21d38418fc5ce067bdfc411ad75d8615195e073a2b1b3"
+      sha256 "4a29ad2edf2089332fe04e7629b05035f183b6a09787931cb0c45f43bd6ce57f"
       define_method(:install) do
         bin.install "kubectl-radar"
         bin.install_symlink "kubectl-radar" => "radar"
@@ -40,7 +40,7 @@ class Radar < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/skyhook-io/radar/releases/download/v1.5.6/radar_v1.5.6_linux_arm64.tar.gz"
-      sha256 "e699045bb2d163598fbfb3369134cc8a2a136278e8643fb5a1a089648a1f82f0"
+      sha256 "9d3cbe87360adcea659d6d59c126d70a3fa40e76de413fdc2b1ab4616efd3b92"
       define_method(:install) do
         bin.install "kubectl-radar"
         bin.install_symlink "kubectl-radar" => "radar"
