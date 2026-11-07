@@ -1,6 +1,6 @@
 cask "radar-desktop" do
-  version "1.20.0"
-  sha256 "0faf572c048f78a98a2213bb1d56e2e46094acd7c36d2da5879406f44fa5079b"
+  version "1.20.1"
+  sha256 "1040fa853d534aa47c880f91b6ba6dec5fbacda4d6b84d12f287f27eff8ad0bd"
 
   url "https://github.com/skyhook-io/radar/releases/download/v#{version}/radar-desktop_v#{version}_darwin_universal.zip"
   name "Radar"
